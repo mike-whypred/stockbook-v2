@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+{{ super() }}
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "l76tlZUQmt8dY1_wUWizY",
+  domain: "www.chatbase.co"
+  }
+  </script>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="l76tlZUQmt8dY1_wUWizY"
+domain="www.chatbase.co"
+defer>
+</script>
+{% endblock %}
